@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando</title>
+</head>
+<body>
+    <h1>Treinando JS</h1>
+    Digite seu país de origem: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" onclick=" clicar()" value="OK">
+    <div id="mostrar"></div> 
+    <script>
+        function clicar(){
+            
+            var país=window.document.querySelector('input#txtpais').value
+            var mostrar=window.document.querySelector('div#mostrar')
+            var id=window.document.querySelector('input#txtpais')
+            mostrar.innerHTML=`Seu país de origem é ${país}`
+            if(país=='Brasil' || país=='brasil'){
+                mostrar.innerHTML+=`<p>Logo, é brasileiro</p>`
+            }
+            else{
+                mostrar.innerHTML+=`<p>Logo, é estrangeiro</p>`
+            }
+        }
+    </script>   
+
+
+</body>
+</html>

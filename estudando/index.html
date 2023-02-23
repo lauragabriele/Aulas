@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com dom </title>
+    <style>
+    body{
+        background-color:rgb(128, 128, 184);
+        color:rgb(255, 255, 255);
+        font: normal 20 pt  Arial;
+    }
+    h1{
+        color:blueviolet
+    }
+    </style>            
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p> <!--paragrafo 0-->
+    <p>Aprendendo usar o <strong>DOM</strong></p> <!--paragrafo 1-->
+    <div id="msg">Clique aqui</div>
+    <script>
+       // window.alert('Minha primeira mensagem')
+        //window.confirm('está gostando de JS?')
+      //  var nome = window.prompt('qual é o seu nome?')
+      //  window.alert('é um prezer tê-lo por aqui,  ' + nome + '!')
+      //var n1 = Number(window.prompt('Digite um número: '))
+      //var n2= Number(window.prompt('Digite outro número: '))
+      //var m= n1 * n2
+      //window.alert(`a multriplicação de ${n1} e de ${n2} é igual a ${m}`)
+      //+ pode ser adição quanto para concatenação
+       // var nome= window.prompt('qual é o seu nome?')
+        //document.write(`<strong> Olá, ${nome}! Seu nome tem ${nome.length} letras. </strong> </br>`) quantas letras tem a palavra
+        //document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()} </br>`) deixa a palavra em maiusculo
+        // document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}`) deixar a palavra em minusculo 
+    
+        var p1 = window.document.getElementsByTagName('p')[1] //aqui está selecionando um elemento(que no caso é o paragrafo)
+        var d=window.document.querySelector('div#msg')
+        d.innerText = 'olá@'
+        d.style.background = 'red'
+</script>
+</body>
+</html>
